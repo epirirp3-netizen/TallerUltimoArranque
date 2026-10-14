@@ -83,6 +83,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         btnRepuestos.setText("REPUESTOS");
         btnRepuestos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnRepuestos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnRepuestos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRepuestosActionPerformed(evt);
+            }
+        });
 
         btnOrdenes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/file-text.png"))); // NOI18N
         btnOrdenes.setText("ÓRDENES");
@@ -93,6 +98,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         btnServicios.setText("SERVICIOS");
         btnServicios.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnServicios.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnServicios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnServiciosActionPerformed(evt);
+            }
+        });
 
         btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/log-out.png"))); // NOI18N
         btnSalir.setText("SALIR");
@@ -199,6 +209,24 @@ public class FrmPrincipal extends javax.swing.JFrame {
         ventana.setVisible(true);
 
     }//GEN-LAST:event_btnVehiculosActionPerformed
+
+    private void btnRepuestosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRepuestosActionPerformed
+        // TODO add your handling code here:
+
+        FrmRepuestos ventana = new FrmRepuestos();
+        ventana.setLocationRelativeTo(this);
+        ventana.setVisible(true);
+
+    }//GEN-LAST:event_btnRepuestosActionPerformed
+
+    private void btnServiciosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServiciosActionPerformed
+        // TODO add your handling code here:
+
+        FrmServicios ventana = new FrmServicios();
+        ventana.setLocationRelativeTo(this);
+        ventana.setVisible(true);
+
+    }//GEN-LAST:event_btnServiciosActionPerformed
 
     /**
      * @param args the command line arguments
