@@ -93,6 +93,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         btnOrdenes.setText("ÓRDENES");
         btnOrdenes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnOrdenes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnOrdenes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOrdenesActionPerformed(evt);
+            }
+        });
 
         btnServicios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/clipboard-list.png"))); // NOI18N
         btnServicios.setText("SERVICIOS");
@@ -227,6 +232,15 @@ public class FrmPrincipal extends javax.swing.JFrame {
         ventana.setVisible(true);
 
     }//GEN-LAST:event_btnServiciosActionPerformed
+
+    private void btnOrdenesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdenesActionPerformed
+        // TODO add your handling code here:
+
+        FrmOrdenes ventana = new FrmOrdenes();
+        ventana.setLocationRelativeTo(this);
+        ventana.setVisible(true);
+
+    }//GEN-LAST:event_btnOrdenesActionPerformed
 
     /**
      * @param args the command line arguments

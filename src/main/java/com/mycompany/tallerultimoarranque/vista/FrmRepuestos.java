@@ -264,7 +264,7 @@ private void configurarBusqueda() {
         txtDescripcion = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Gestión de Mecánicos");
+        setTitle("Gestión de Repuestos");
         setResizable(false);
 
         lblTitulo.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
